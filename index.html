@@ -22,8 +22,29 @@
         .manrope-font {
             font-family: 'Manrope', sans-serif;
         }
+
+        .banner-height {
+            height: 550px;
+        }
     </style>
+
+    <!-- color -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#da373d',
+                        'primary-ash': 'rgba(255, 255, 255, 0.60)',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
+
 
 <body class="manrope-font">
     <header class="container mx-auto">
@@ -40,18 +61,18 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a class="text-[#FF4240]">Home</a></li>
+                        <li><a class="text-primary-red">Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                <a class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-primary-red">’</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a class="text-[#FF4240]">Home</a></li>
+                    <li><a class="text-primary-red">Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Pages</a></li>
                     <li><a>Blog</a></li>
@@ -71,43 +92,112 @@
             </div>
         </div>
 
-        <!-- Banner section -->
-        <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide3" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide4" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-        </div>
+        <div class="relative">
+            <!-- Banner section -->
+            <div class="carousel w-full mt-8">
 
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- tag div -->
+            <div
+                class="lg:absolute bottom-8 right-12 lg:p-8 p-4 rounded-md lg:w-2/4 w-full space-y-4 bg-black text-white">
+                <h2 class="font-extrabold text-lg lg:text-2xl">Meet all the heroes from the field</h2>
+                <p class="text-primary-ash text-sm lg:text-base font-medium">In the bustling arena of excellence, gather
+                    to witness the convergence of champions from diverse
+                    fields. From the realms of sports to academia, and beyond, meet the heroes who have conquered
+                    challenges and emerged victorious.</p>
+            </div>
+
+        </div>
     </header>
 
-    <main>
+    <main class="container mx-auto">
 
+        <!-- professional club section -->
+        <section class="mt-10">
+            <div class="text-center">
+                <h2 class="font-extrabold text-2xl lg:text-4xl">Professional Hockeys Club</h2>
+                <p class="font-medium text-sm lg:text-base mt-5 mb-5 w-72 mx-auto lg:w-3/4">Our club has all kind of opportunity and loaded of
+                    professional coach and playes.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+                <!-- club info 1 -->
+                <div class="text-center space-y-8 mt-10">
+                    <div class="radial-progress rotate-90 text-primary-red" style="--value:87;" role="progressbar">
+                        <div class="-rotate-90 text-black font-extrabold text-2xl p-4">87%</div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-5">Prayer Facility</h4>
+                        <p class="text-sm font-normal w-64 mx-auto lg:w-3/4">A dedicated space equipped with state-of-the-art amenities and
+                            resources to enhance the training, well-being, and performance of athletes in various</p>
+                    </div>
+
+                </div>
+
+                <!-- club info 2 -->
+                <div class="text-center space-y-8 mt-10">
+                    <div class="radial-progress rotate-90 text-[#49D293]" style="--value:95;" role="progressbar">
+                        <div class="-rotate-90 text-black font-extrabold text-2xl p-4">95%</div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-5">Experienced Coach</h4>
+                        <p class="text-sm font-normal w-64 mx-auto lg:w-3/4">An experienced coach possesses a wealth of knowledge, refined skills, and a profound understanding of their sport, fostering athlete development and success through expert guidance and strategic mentorship.</p>
+                    </div>
+
+                </div>
+
+                <!-- club info 3 -->
+                <div class="text-center space-y-8 mt-10">
+                    <div class="radial-progress rotate-90 text-[#FFB546]" style="--value:90;" role="progressbar">
+                        <div class="-rotate-90 text-black font-extrabold text-2xl p-4">90%</div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-5">Senior Player</h4>
+                        <p class="text-sm font-normal w-64 mx-auto lg:w-3/4">A senior player brings a wealth of on-field wisdom, leadership, and seasoned skills, contributing invaluable experience to the team dynamic.</p>
+                    </div>
+
+                </div>
+
+                <!-- club info 4 -->
+                <div class="text-center space-y-8 mt-10">
+                    <div class="radial-progress rotate-90 text-[#4C8DF1]" style="--value:80;" role="progressbar">
+                        <div class="-rotate-90 text-black font-extrabold text-2xl p-4">80%</div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-5">Training Ground</h4>
+                        <p class="text-sm font-normal w-64 mx-auto lg:w-3/4">The training ground serves as the crucible for athletic excellence, providing a purposeful space where athletes hone their skills, cultivate teamwork, and forge the foundations of success.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
     </main>
+
 </body>
 
 </html>
