@@ -35,7 +35,9 @@
             theme: {
                 extend: {
                     colors: {
+                        'primary-black': '#131318;',
                         'primary-red': '#da373d',
+                        'light-white': 'rgba(19, 19, 24, 0.60)',
                         'primary-ash': 'rgba(255, 255, 255, 0.60)',
                     }
                 }
@@ -123,7 +125,7 @@
             </div>
             <!-- tag div -->
             <div
-                class="lg:absolute bottom-8 right-12 lg:p-8 p-4 rounded-md lg:w-2/4 w-full space-y-4 bg-black text-white">
+                class="lg:absolute bottom-8 right-12 lg:p-8 p-4 rounded-md lg:w-2/4 w-full space-y-4 bg-primary-black text-white">
                 <h2 class="font-extrabold text-lg lg:text-2xl">Meet all the heroes from the field</h2>
                 <p class="text-primary-ash text-sm lg:text-base font-medium">In the bustling arena of excellence, gather
                     to witness the convergence of champions from diverse
@@ -139,8 +141,10 @@
         <!-- professional club section -->
         <section class="mt-10">
             <div class="text-center">
-                <h2 class="font-extrabold text-2xl lg:text-4xl">Professional Hockeys Club</h2>
-                <p class="font-medium text-sm lg:text-base mt-5 mb-5 w-72 mx-auto lg:w-3/4">Our club has all kind of opportunity and loaded of
+                <h2 class="font-extrabold text-2xl lg:text-4xl text-primary-black">Professional Hockeys Club</h2>
+                <p class="font-medium text-light-white text-sm lg:text-base mt-5 mb-5 w-72 mx-auto lg:w-3/4">Our club
+                    has all kind of
+                    opportunity and loaded of
                     professional coach and playes.</p>
             </div>
 
@@ -152,7 +156,9 @@
                     </div>
                     <div>
                         <h4 class="text-xl font-semibold mb-5">Prayer Facility</h4>
-                        <p class="text-sm font-normal w-64 mx-auto lg:w-3/4">A dedicated space equipped with state-of-the-art amenities and
+                        <p class="text-sm font-normal w-64 mx-auto lg:w-3/4 text-light-white">A dedicated space equipped
+                            with
+                            state-of-the-art amenities and
                             resources to enhance the training, well-being, and performance of athletes in various</p>
                     </div>
 
@@ -165,7 +171,10 @@
                     </div>
                     <div>
                         <h4 class="text-xl font-semibold mb-5">Experienced Coach</h4>
-                        <p class="text-sm font-normal w-64 mx-auto lg:w-3/4">An experienced coach possesses a wealth of knowledge, refined skills, and a profound understanding of their sport, fostering athlete development and success through expert guidance and strategic mentorship.</p>
+                        <p class="text-sm text-light-white font-normal w-64 mx-auto lg:w-3/4">An experienced coach
+                            possesses a wealth of
+                            knowledge, refined skills, and a profound understanding of their sport, fostering athlete
+                            development and success through expert guidance and strategic mentorship.</p>
                     </div>
 
                 </div>
@@ -177,7 +186,10 @@
                     </div>
                     <div>
                         <h4 class="text-xl font-semibold mb-5">Senior Player</h4>
-                        <p class="text-sm font-normal w-64 mx-auto lg:w-3/4">A senior player brings a wealth of on-field wisdom, leadership, and seasoned skills, contributing invaluable experience to the team dynamic.</p>
+                        <p class="text-sm text-light-white font-normal w-64 mx-auto lg:w-3/4">A senior player brings a
+                            wealth of on-field
+                            wisdom, leadership, and seasoned skills, contributing invaluable experience to the team
+                            dynamic.</p>
                     </div>
 
                 </div>
@@ -189,13 +201,77 @@
                     </div>
                     <div>
                         <h4 class="text-xl font-semibold mb-5">Training Ground</h4>
-                        <p class="text-sm font-normal w-64 mx-auto lg:w-3/4">The training ground serves as the crucible for athletic excellence, providing a purposeful space where athletes hone their skills, cultivate teamwork, and forge the foundations of success.</p>
+                        <p class="text-sm text-light-white font-normal w-64 mx-auto lg:w-3/4">The training ground serves
+                            as the crucible
+                            for athletic excellence, providing a purposeful space where athletes hone their skills,
+                            cultivate teamwork, and forge the foundations of success.</p>
                     </div>
 
                 </div>
 
             </div>
         </section>
+
+        <!-- Program section -->
+        <section class="mt-12">
+
+            <div class="text-center ">
+                <h2 class="text-4xl font-extrabold text-primary-black">Program Sections</h2>
+                <p class="lg:w-3/4 w-72 mx-auto text-base font-medium text-light-white mt-10">The club offers a
+                    comprehensive and structured approach to athletic development, fostering skill enhancement, team
+                    cohesion, and a sense of community, empowering individuals to thrive in their chosen sports.</p>
+            </div>
+
+            <div class="grid gap-2 lg:gap-4 lg:grid-cols-2 grid-cols-1">
+
+                <!-- image 1 -->
+                <div class="hero min-h-screen rounded-2xl mt-12 mx-auto" style="background-image: url(./Images/2.png);">
+                    <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="text-left text-white">
+                            <h1 class="mb-5 font-extrabold text-xl lg:text-3xl">Junior Program</h1>
+                            <p class="mb-5 text-sm lg:text-base font-medium lg:w-3/4">The junior program serves as a nurturing
+                                incubator for budding talents, providing a supportive environment where young athletes
+                                not only develop fundamental skills but also cultivate a passion for sports, fostering
+                                growth, camaraderie, and a lifelong love for physical activity.</p>
+                            <button class="btn bg-primary-red text-white hover:bg-primary-red  border-0">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 2 -->
+                <div class="hero min-h-screen rounded-2xl mt-6 lg:mt-12 mx-auto" style="background-image: url(./Images/3.png);">
+                    <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="text-left text-white">
+                            <h1 class="mb-5 font-extrabold text-xl lg:text-3xl">Teenager Program</h1>
+                            <p class="mb-5 text-sm lg:text-base font-medium lg:w-3/4">The teenager program is designed to channel the energy and enthusiasm of adolescents into a purposeful and structured sports environment, focusing on skill refinement, character development, and mentorship to empower young athletes during a crucial phase of physical and personal growth.</p>
+                            <button class="btn bg-primary-red text-white hover:bg-primary-red  border-0">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 3 -->
+                <div class="hero min-h-screen rounded-2xl mt-6 lg:mt-6 mx-auto lg:col-span-2" style="background-image: url(./Images/4.png);">
+                    <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="text-left text-white">
+                            <h1 class="mb-5 font-extrabold text-xl lg:text-3xl">Professional Program</h1>
+                            <p class="mb-5 text-sm lg:text-base font-medium lg:w-2/4">The Professional Program serves as a nurturing
+                                incubator for budding talents, providing a supportive environment where young athletes
+                                not only develop fundamental skills but also cultivate a passion for sports, fostering
+                                growth, camaraderie, and a lifelong love for physical activity.</p>
+                            <button class="btn bg-primary-red text-white hover:bg-primary-red  border-0">Register
+                                Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
 </body>
